@@ -10,4 +10,4 @@ frame_tick = 0;//dont change this
 current_frame = image_index;
 depth -= 1;
 create_bug = true;//instance_crate() doesn't override Create variables:(
-
+moved = false;
