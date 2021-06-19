@@ -15,7 +15,6 @@
   "layers": [
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_Player_1","path":"objects/obj_Player_1/obj_Player_1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":48.0,"y":112.0,"resourceVersion":"1.0","name":"inst_5AB37A08","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_Game","path":"objects/obj_Game/obj_Game.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":64.0,"resourceVersion":"1.0","name":"inst_52966CC1","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_Tile_Fireball","path":"objects/obj_Tile_Fireball/obj_Tile_Fireball.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":112.0,"resourceVersion":"1.0","name":"inst_4CFB0649","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_Entity","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"ts_Collision","path":"tilesets/ts_Collision/ts_Collision.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":10,"SerialiseHeight":10,"TileSerialiseData":[
@@ -48,9 +47,8 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_5AB37A08","path":"rooms/Room_Main/Room_Main.yy",},
-    {"name":"inst_52966CC1","path":"rooms/Room_Main/Room_Main.yy",},
-    {"name":"inst_4CFB0649","path":"rooms/Room_Main/Room_Main.yy",},
+    {"name":"inst_5AB37A08","path":"rooms/rm_Level_Test/rm_Level_Test.yy",},
+    {"name":"inst_4CFB0649","path":"rooms/rm_Level_Test/rm_Level_Test.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -78,7 +76,7 @@
     "path": "folders/Rooms.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Room_Main",
+  "name": "rm_Level_Test",
   "tags": [],
   "resourceType": "GMRoom",
 }
