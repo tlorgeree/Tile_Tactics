@@ -16,14 +16,15 @@
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_Player_1","path":"objects/obj_Player_1/obj_Player_1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":48.0,"y":112.0,"resourceVersion":"1.0","name":"inst_5AB37A08","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_Tile_Fireball","path":"objects/obj_Tile_Fireball/obj_Tile_Fireball.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":112.0,"resourceVersion":"1.0","name":"inst_4CFB0649","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_Tile_Fireball","path":"objects/obj_Tile_Fireball/obj_Tile_Fireball.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":80.0,"y":64.0,"resourceVersion":"1.0","name":"inst_EB8ED56","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_Entity","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"ts_Collision","path":"tilesets/ts_Collision/ts_Collision.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":10,"SerialiseHeight":10,"TileSerialiseData":[
 1,1,1,1,1,1,1,1,1,1,
 1,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,1,
 1,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,1,
 1,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,1,
-1,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,1,
-1,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,1,
+1,2147483648,0,0,2147483648,2147483648,2147483648,2147483648,2147483648,1,
+1,0,0,0,0,0,0,0,2147483648,1,
 1,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,1,
 1,0,0,0,0,0,2147483648,2147483648,2147483648,1,
 1,0,0,0,0,2147483648,2147483648,2147483648,2147483648,1,
@@ -49,6 +50,7 @@
   "instanceCreationOrder": [
     {"name":"inst_5AB37A08","path":"rooms/rm_Level_Test/rm_Level_Test.yy",},
     {"name":"inst_4CFB0649","path":"rooms/rm_Level_Test/rm_Level_Test.yy",},
+    {"name":"inst_EB8ED56","path":"rooms/rm_Level_Test/rm_Level_Test.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
