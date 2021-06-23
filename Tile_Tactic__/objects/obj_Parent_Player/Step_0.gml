@@ -1,10 +1,23 @@
 // Movement Variables
 entity_type = "player";
-move_left = keyboard_check_pressed(ord("A"));
-move_right = keyboard_check_pressed(ord("D"));
-move_up = keyboard_check_pressed(ord("W"));
-move_down = keyboard_check_pressed(ord("S"));
-state_test = keyboard_check_pressed(ord("F"));
+
+switch (player)
+{
+	case 1: move_left = keyboard_check_pressed(ord("A"));
+		move_right = keyboard_check_pressed(ord("D"));
+		move_up = keyboard_check_pressed(ord("W"));
+		move_down = keyboard_check_pressed(ord("S"));
+		state_test = keyboard_check_pressed(ord("F"));
+		break;
+	
+	case 2:  move_left = keyboard_check_pressed(ord("J"));
+		move_right = keyboard_check_pressed(ord("L"));
+		move_up = keyboard_check_pressed(ord("I"));
+		move_down = keyboard_check_pressed(ord("K"));
+		state_test = keyboard_check_pressed(ord(";"));
+		break;
+	
+}
 
 
 x_move = (move_right - move_left);
