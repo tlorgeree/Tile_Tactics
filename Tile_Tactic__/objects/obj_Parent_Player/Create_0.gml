@@ -1,5 +1,7 @@
 /// @desc Initialize Player Variables
-player = 1;
+player = -1;
+initialized = false;
+entity_type = "player";
 depth -= 1;
 image_index = 0;
 current_frame = image_index;
@@ -12,7 +14,7 @@ weapon = -1;
 
 
 player_state = Player_State_Null;
-switch (player)
+/*switch (player)
 {
 	case 1: sprite_default = spr_Player_1;
 		break;
@@ -23,6 +25,7 @@ switch (player)
 
 
 }
-sprite = sprite_default;
+sprite_index = sprite_default;
+sprite = sprite_index; */
 
 activated = false;
