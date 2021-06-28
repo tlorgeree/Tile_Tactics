@@ -6,6 +6,7 @@ depth -= 1;
 image_index = 0;
 current_frame = image_index;
 image_speed = 0;
+frame_rate = 0;
 dir = 0;
 hp = 100;
 atk = 10;
