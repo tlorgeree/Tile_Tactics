@@ -24,6 +24,7 @@ switch (player)
 		move_up = keyboard_check_pressed(ord("W"));
 		move_down = keyboard_check_pressed(ord("S"));
 		state_test = keyboard_check_pressed(ord("F"));
+		activate_charge = keyboard_check_pressed(ord("G"));
 		break;
 	
 	case 2:  move_left = keyboard_check_pressed(ord("J"));

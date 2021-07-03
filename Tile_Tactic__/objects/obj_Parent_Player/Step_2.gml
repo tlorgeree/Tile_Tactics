@@ -3,6 +3,6 @@
 if (initialized)
 {
 	initialized = false;
-	show_debug_message("uninitilized player");
+	show_debug_message("uninitialized player");
 }
 

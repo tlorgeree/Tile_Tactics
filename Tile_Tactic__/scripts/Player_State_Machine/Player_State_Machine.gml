@@ -1,17 +1,23 @@
 /// @desc
 function Player_State_Null(){
-	var _state_to = player_state;
 	if (activated == false)
 	{
 		if (position_meeting(x,y, obj_Parent_Tile))
 		{
-		
-			//Do stuff
 			with (obj_Parent_Tile)
 			{
-				_state_to = class;
+				var _add_charge = class;
+			}
+			if (charge == -1) charge[0] = _add_charge;
+			
+			else
+			{
+				var charge_n = array_length(charge);
+				charge[charge_n] = _add_charge;
+				show_debug_message(string(charge));
 			}
 			activated = true;
+			show_debug_message(string(charge));
 			
 		}
 	}
@@ -26,18 +32,21 @@ function Player_State_Null(){
 		}
 	}
 	
-	switch (_state_to)
+	if ((state_test) && !(charge == -1))
 	{
-		case "fire": player_state = Player_State_Fire;
-			break;
+		var _state_to = charge[0];
+		switch (_state_to)
+		{
+			case "fire": player_state = Player_State_Fire;
+				break;
 		
-		case "null": player_state = Player_State_Null; 
-			break;
+			case "null": player_state = Player_State_Null; 
+				break;
 			
-		default: player_state = Player_State_Null;
-			break;
+			default: player_state = Player_State_Null;
+				break;
+		}
 	}
-
 
 }
 	
@@ -66,7 +75,7 @@ function Player_State_Fire(){
 	}
 	
 	
-	
+	Remove_Charge();
 	
 	player_state = Player_State_Null;
 }

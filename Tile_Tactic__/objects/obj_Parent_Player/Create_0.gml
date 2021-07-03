@@ -11,8 +11,8 @@ dir = 0;
 hp = 100;
 atk = 10;
 spd = 1;
-weapon = -1;
-
+charge = -1;
+charge_max = 1;
 
 player_state = Player_State_Null;
 /*switch (player)
