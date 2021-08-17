@@ -16,16 +16,16 @@ if !((room == rm_Main_Menu) || (room == rm_End_Menu))
 	
 	for (var i = 0; i < _players; i++)
     {
-		with (instance_id[i]) 
+		with (instance_find(obj_Parent_Player, i)) 
 		{
-			show_debug_message("Found " + string(instance_id[i]));
-			show_debug_message("instance id meets condition: " + string(instance_id[i].entity_type == "player"))
-			show_debug_message("instance id entity type is " + string(instance_id[i].entity_type));
-			if (instance_id[i].entity_type == "player")
+			show_debug_message("Found " + string(id[i]));
+			show_debug_message("instance id meets condition: " + string(id[i].entity_type == "player"))
+			show_debug_message("instance id entity type is " + string(id[i].entity_type));
+			if (id[i].entity_type == "player")
 			{
-				instance_id[i].initialized = true;
+				id[i].initialized = true;
 				player = _player_number[i];
-				show_debug_message("Player number is now: " + string(instance_id[i].player));
+				show_debug_message("Player number is now: " + string(id[i].player));
 			}
 			
 		}

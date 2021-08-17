@@ -31,7 +31,8 @@ switch (player)
 		move_right = keyboard_check_pressed(ord("L"));
 		move_up = keyboard_check_pressed(ord("I"));
 		move_down = keyboard_check_pressed(ord("K"));
-		state_test = keyboard_check_pressed(ord(";"));
+		state_test = keyboard_check_pressed(ord("N"));
+		activate_charge = keyboard_check_pressed(ord("M"));
 		break;
 		
 	default: break;
