@@ -52,26 +52,35 @@ function Player_State_Null(){
 	
 function Player_State_Fire(){
 	//Spawn Fireballs
-	var _player = self;
+	var _player = id;
+	var _layer_id = layer_get_id("Tiles_Collision");
+	var _map_id = layer_tilemap_get_id(_layer_id);
 	
-	with (instance_create_layer(_player.x + TILE_SIZE, _player.y, "Instances_Entity", obj_Fireball_Projectile))
-	{
-		dir = RIGHT;
+	if !(tilemap_get_at_pixel(_map_id, x+TILE_SIZE, y)){
+		with (instance_create_layer(_player.x + TILE_SIZE, _player.y, "Instances_Entity", obj_Fireball_Projectile)){
+			dir = RIGHT;
+		}
 	}
 	
-	with (instance_create_layer(_player.x - TILE_SIZE, _player.y, "Instances_Entity", obj_Fireball_Projectile))
-	{
-		dir = LEFT;
+	if !(tilemap_get_at_pixel(_map_id, x-TILE_SIZE, y)){
+		with (instance_create_layer(_player.x - TILE_SIZE, _player.y, "Instances_Entity", obj_Fireball_Projectile))
+		{
+			dir = LEFT;
+		}
 	}
 	
-	with (instance_create_layer(_player.x , _player.y + TILE_SIZE, "Instances_Entity", obj_Fireball_Projectile))
-	{
-		dir = DOWN;
+	if !(tilemap_get_at_pixel(_map_id, x, y+TILE_SIZE)){
+		with (instance_create_layer(_player.x , _player.y + TILE_SIZE, "Instances_Entity", obj_Fireball_Projectile))
+		{
+			dir = DOWN;
+		}
 	}
 	
-	with (instance_create_layer(_player.x , _player.y - TILE_SIZE, "Instances_Entity", obj_Fireball_Projectile))
-	{
-		dir = UP;
+	if !(tilemap_get_at_pixel(_map_id, x, y-TILE_SIZE)){
+		with (instance_create_layer(_player.x , _player.y - TILE_SIZE, "Instances_Entity", obj_Fireball_Projectile))
+		{
+			dir = UP;
+		}
 	}
 	
 	
